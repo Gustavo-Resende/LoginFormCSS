@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form CSS</title>
+</head>
+<body>
+    <main>
+        <section class="left-side">
+            <div class="box-logo">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </div>
+            <div class="box-square-master">
+                <div class="box-in-square-master">
+                    <div class="head-box">
+                        <div class="box-line">
+                            <img src="images/log-in.svg" alt="log-in" class="log-in-img">
+                            <h1>Faça seu login</h1>
+                        </div>
+                        <div class="box-line1">
+                            <p>Entre com suas informações de cadastro.</p>
+                        </div>
+                    </div>
+                    <form id="form">
+                        <fieldset>
+                            <div class="box-part-mail">
+                                <label>E-mail</label>
+                                <br>
+                                <input type="mail" name="mail" id="form" placeholder="Digite seu e-mail" required>
+                                <img src="images/mail.svg" alt="mail-img" class="mail-img" aria-hidden="true">
+                            </div>
+                            <div class="box-part-password">
+                                <label>Senha</label>
+                                <br>
+                                <input type="password" name="password" id="form" placeholder="Digite sua senha" required maxlength="18" minlength="5">
+                                <img src="images/lock.svg" alt="lock-img" class="lock-img">
+                                <img src="images/eye.svg" alt="eye-img" class="eye-img">
+                            </div>
+                        </fieldset>
+                        <div class="box-all-line-checkbox">
+                            <div class="box-checkbox">
+                                <input type="checkbox" id="checkbox">                       
+                                <label for="checkbox">Lembre-me</label>
+                            </div>
+                            <a href=""><p>Esqueci minha senha</p></a>
+                        </div>
+                    </form>
+                    <div class="box-bottom-side">
+                        <button type="submit" form="form" formmethod="get" name="dados">ENTRAR</button>
+                        <p>Não tem uma conta? <a href="/" style="color:inherit;"><strong>Registre-se</strong></a></p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="right-side">
+        </section>
+    </main>
+</body>
+</html>

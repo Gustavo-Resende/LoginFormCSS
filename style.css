@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+main {
+    width: auto;
+    height: 100vh;
+    display: flex;
+}
+
+.left-side{
+    height: 100%;
+    width: 50%;
+    background-color: #191816;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side{
+    height: 100%;
+    width: 50%;
+    background-image: url(images/side-image-2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-logo{
+    height: 5%;
+    width: 100%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.box-square-master{
+    width: 572px;
+    height: 512px;
+    margin-bottom: 154px;
+    background-color: #24221f;
+    border-radius: 4px;     
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head-box{
+    margin-bottom: 27px;
+}
+
+.box-line{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 24px;
+    color: #D4CCB6;
+}
+
+.box-line1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFB6C2;
+    margin-left: 5px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 1px;
+}
+
+label{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #AFB6C2;
+}
+
+fieldset input{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    padding-left: 40px;
+}
+
+fieldset .box-part-mail input:focus{
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 2px solid #FFC632;
+}
+
+fieldset .box-part-password input:focus{
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 2px solid #FFC632;
+}
+
+.mail-img{
+    position: relative;
+    bottom: 32px;
+    left: 12.600000000000001px;
+}
+
+.lock-img{
+    position: relative;
+    left: 10px;
+    bottom: 32px;
+}
+
+.eye-img{
+    position: relative;
+    left: 83%;
+    bottom: 31px;
+}
+
+.box-all-line-checkbox{
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-all-line-checkbox, p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+}
+
+.box-checkbox input{
+    display: none;
+}
+
+.box-checkbox input + label:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #868686;
+    margin-right: 6px;
+    margin-bottom: 1px;
+}
+
+.box-checkbox input:checked + label:before{
+    background-color: #FFC632;
+    border: 1px solid #FFC632;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 5L7.50004 14.1667L3.33337 10' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.box-bottom-side{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box-bottom-side button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 334px;
+    height: 51px;
+    background: #FFC632;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    color: #473404;
+}
+
+.box-bottom-side button:hover{
+    background: #daa930;
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .box-square-master{
+        width: auto;
+    }
+}
+
+@media (max-width: 985px) {
+    .right-side{
+        display: none;
+    }
+    
+    .left-side{
+        width: 100%;
+    }
+}
+
+@media  (max-width: 480px) {
+    .box-square-master{
+        background-color: transparent;
+    }  
+}
+
+@media (max-width: 465px) {
+    .box-square-master{
+        margin-top: 100px;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 415px) {
+    .box-logo{
+        display: flex;
+        justify-content: center;
+        height: 20%;
+    }
+
+    .head-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box-part-mail input, .box-part-password{
+        width: 90%;
+        margin-left: 17px;
+    }
+
+    .box-part-mail label{
+        margin-left: 20px;
+    }
+
+    .box-part-password label{
+        margin-left: 20px;
+    }
+
+    .box-all-line-checkbox{
+        padding: 0px 20px 0 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .left-side{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 20%;
+        gap: 10px;
+    }
+
+    .box-logo{
+        padding: 15px;
+        height: 10%;
+    }
+
+    .logo{
+        height: 100%;
+        width: 100%;
+    }
+
+    .head-box{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .head-box h1{
+        font-size: 25px;
+    }
+
+    .head-box p {
+        font-size: 12px;
+    }
+
+    .box-square-master{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    fieldset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-part-mail{
+        width: 80%;
+        padding: 0;
+    }
+
+    .box-part-mail input{
+        width: 100%;
+        margin: 0;
+    }
+
+    .box-part-password{
+        width: 80%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .box-part-password input{
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .lock-img{
+        left: 10px;
+    }
+
+    .mail-img{
+        left: 10px;
+    }
+
+    .eye-img{
+        position: relative;
+        left: 230px;
+    }
+
+    .box-all-line-checkbox{
+        padding: 0 40px 0 40px;
+    }
+
+    .box-bottom-side{
+        width: 100%;
+    }
+
+    .box-bottom-side button{
+        width: 80%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #A9AFB9;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.box-checkbox:hover input ~ .checkmark{
+    border: 1px solid #FFC632;
+
+}
+
+.box-checkbox input:checked ~ .checkmark{
+    background-color: #FFC632;
+    border: none;
+}
+
+.box-checkbox .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    height: 10px;
+    width: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.box-checkbox input:checked ~ .checkmark{
+    display: block;
+} */
